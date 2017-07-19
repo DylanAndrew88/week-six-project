@@ -1,0 +1,22 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <% include head.ejs %>
+    </head>
+    <body>
+
+      <h1> <%=title%> - <%=pageID%> </h1>
+
+      <form action="/login" method="POST">
+        <p>username:</p>
+        <input type="text" name="userName" placeholder="username">
+        <p>password:</p>
+        <input type="password" name="password" placeholder="******">
+        <br>
+        <br>
+        <button type="submit">Login</button>
+      </form>
+
+    </body>
+  </html>

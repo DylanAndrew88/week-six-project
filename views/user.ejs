@@ -1,0 +1,23 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <% include head.ejs %>
+    </head>
+    <body>
+
+      <h5> <%=title%> </h5>
+      <h5> Create a new gab </h5>
+      <h5> Currently logged in as <%=display%> </h5>
+      <h5> Log Out </h5>
+      <h1> <%=title%> - <%=pageID%> </h1>
+
+      <form action="/user" method="POST">
+        <h3>Create a new gab</p>
+        <input type="text" id="gab" name="gab">
+        <br>
+        <button type="submit">Gab</button>
+      </form>
+
+    </body>
+  </html>

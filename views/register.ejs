@@ -1,0 +1,27 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <% include head.ejs %>
+    </head>
+    <body>
+
+      <h1> <%=title%> - <%=pageID%> </h1>
+
+      <form action="/register" method="POST">
+        <p>Enter a username and password to create a Gabble account</p>
+        <p>username:</p>
+        <input type="text" name="username" placeholder="ex. GabbleUser123">
+        <p>display name:</p>
+        <input type="text" name="displayName" placeholder="ex. Gabby">
+        <p>password:</p>
+        <input type="password" name="password" placeholder="******">
+        <p>confirm password:</p>
+        <input type="password" name="passwordConfirm" placeholder="******">
+        <br>
+        <br>
+        <button type="submit">Register</button>
+      </form>
+
+    </body>
+  </html>
