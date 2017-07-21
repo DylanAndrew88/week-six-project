@@ -7,14 +7,12 @@
     <body>
 
       <div class='navbar'>
-        <h5> <a href="../"> Home </a></h5>
+        <h5> <a href="/index"> Home </a></h5>
         <h5> Currently logged in as <%=display%> </h5>
         <h5> <a href="/logout"> Log Out </a></h5>
       </div>
 
-      <h1> <%=title%> - <%=pageID%>'s Profile </h1>
-
-      <p> Welcome to your profile page, <%=display%> </p>
+      <h1> <%=title%> - <%=display%>'s Gabs </h1>
 
       <form action="/gab" method="POST">
         <h3>Create a new gab</h3>
@@ -22,6 +20,10 @@
         <br>
         <button type="submit">Gab</button>
       </form>
+
+      <div id="gabs">
+        <h4> <%=user%> </h4>
+        <p> <%=message%> </p>
 
     </body>
   </html>
