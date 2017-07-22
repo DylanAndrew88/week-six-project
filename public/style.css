@@ -6,4 +6,13 @@
 
   body {
     font-family: "Helvetica", sans-serif;
+    padding-left: 10px;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  h5 {
+    padding-right: 30px;
   }

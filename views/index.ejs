@@ -5,13 +5,40 @@
       <% include head.ejs %>
     </head>
     <body>
+      <h1> Welcome to Gabble </h1>
+      <p> A social network designed for those who possess the gift of gab. </p>
 
-      <h1> <%=title%> - <%=pageID%> </h1>
-      <h3> Welcome to Gabble </h3>
-
-      <a href="/login"> login </a>
-      <br>
-      <a href="/register"> register </a>
+      <div class=links>
+        <a href="/login"> login </a>
+        <form action="/login" method="POST">
+          <br>
+          <p>username:</p>
+          <input type="text" name="usernameLogin" placeholder="username">
+          <p>password:</p>
+          <input type="password" name="password" placeholder="******">
+          <br>
+          <br>
+          <button type="submit">Login</button>
+        </form>
+        <br>
+        <br>
+        <p> New to Gable?<a href="/register">register</a> to make an account today!</p>
+        <br>
+        <form action="/register" method="POST">
+          <p>Enter a username and password to create a Gabble account</p>
+          <p>username:</p>
+          <input type="text" name="usernameRegister" placeholder="ex. GabbleUser123">
+          <p>display name:</p>
+          <input type="text" name="displayName" placeholder="ex. Gabby">
+          <p>password:</p>
+          <input type="password" name="password" placeholder="******">
+          <p>confirm password:</p>
+          <input type="password" name="passwordConfirm" placeholder="******">
+          <br>
+          <br>
+          <button type="submit">Register</button>
+        </form>
+      </div>
 
     </body>
   </html>
